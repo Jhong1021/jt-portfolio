@@ -12,7 +12,7 @@ const ProductGrid = () => {
       src: Furniture,
       alt: "Photo by Minh Pham",
       label: "Timber & Trend",
-      colSpan: "col-span-1",
+      colSpan: "md:col-span-1",
       link: "https://furniture-shop-liart.vercel.app/",
       animation: { opacity: 0, y: -50 }, // Fade Down
     },
@@ -20,8 +20,8 @@ const ProductGrid = () => {
       id: 2,
       src: Gym,
       alt: "Photo by Magicle",
-      label: "Strenght Station",
-      colSpan: "col-span-2",
+      label: "Strength Station",
+      colSpan: "md:col-span-2",
       link: "https://strenghtstation.vercel.app/",
       animation: { opacity: 0, x: 50 }, // Fade Right
     },
@@ -30,7 +30,7 @@ const ProductGrid = () => {
       src: todoList,
       alt: "Photo by Martin Sanchez",
       label: "Todo List App",
-      colSpan: "col-span-2",
+      colSpan: "md:col-span-2",
       link: "https://todo-list-app-tau-eight.vercel.app/",
       animation: { opacity: 0, x: -50 }, // Fade Left
     },
@@ -39,20 +39,29 @@ const ProductGrid = () => {
       src: Cat,
       alt: "Photo by Lorenzo Herrera",
       label: "Meow Mart",
-      colSpan: "col-span-1",
+      colSpan: "md:col-span-1",
       link: "https://meow-cart.vercel.app/",
       animation: { opacity: 0, y: 50 }, // Fade Up
     },
   ];
 
   return (
-    <div id="project" className="h-screen py-6 sm:py-8 lg:py-12">
+    <div id="project" className="h-full py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         {/* Header Section */}
         <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
           <div className="flex items-center gap-12">
             <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">My Recent Projects</h2>
+            <p className="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+              Explore some of my recent projects showcasing a range of design and functionality.
+            </p>
           </div>
+          <a
+            href="#"
+            className="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
+          >
+            More
+          </a>
         </div>
 
         {/* Gallery Grid */}
@@ -60,14 +69,14 @@ const ProductGrid = () => {
           {images.map((image) => (
             <motion.a
               key={image.id}
-              href={image.link} // Use the dynamic link
-              target="_blank" // Open link in a new tab
-              rel="noopener noreferrer" // Security best practice for links opening in a new tab
+              href={image.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80 ${image.colSpan}`}
-              initial={image.animation} // Initial animation state
-              whileInView={{ opacity: 1, x: 0, y: 0 }} // Final visible state
-              viewport={{ once: false, amount: 0.2 }} // Trigger animation when 20% of the element is visible
-              transition={{ duration: 1, ease: "easeOut" }} // Animation duration and easing
+              initial={image.animation}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 1, ease: "easeOut" }}
             >
               <img
                 src={image.src}

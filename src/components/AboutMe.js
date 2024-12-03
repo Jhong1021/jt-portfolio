@@ -50,31 +50,9 @@ const AboutMe = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="text-3xl font-bold mb-4">About Me</h2>
-                    <p className="text-start text-lg">
+                    <p className="text-start text-lg mt-10">
                         "Hi, I'm Joene Tuban, a front-end developer passionate about creating beautiful, user-friendly websites. I specialize in React, JavaScript, HTML5, CSS3, and TailwindCSS to bring web projects to life."
                     </p>
-                    <h2 className="text-3xl font-bold mt-2">Skills</h2>
-                    <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                        {/* Skill Icons */}
-                        {[{ icon: FaHtml5, color: 'text-orange-500', delay: 0.1 },
-                        { icon: FaCss3Alt, color: 'text-blue-500', delay: 0.2 },
-                        { icon: FaJs, color: 'text-yellow-500', delay: 0.3 },
-                        { icon: SiTailwindcss, color: 'text-teal-400', delay: 0.4 },
-                        { icon: FaBootstrap, color: 'text-purple-600', delay: 0.5 },
-                        { icon: FaReact, color: 'text-blue-400', delay: 0.6 },
-                        { icon: FaGithub, color: 'text-gray-400', delay: 0.7 }].map(({ icon: Icon, color, delay }, index) => (
-                            <motion.li
-                                key={index}
-                                className="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300 ease-in-out"
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: false, amount: 0.2 }}
-                                transition={{ delay }}
-                            >
-                                <Icon className={`text-4xl mb-2 ${color}`} />
-                            </motion.li>
-                        ))}
-                    </ul>
                 </motion.div>
 
                 <motion.div

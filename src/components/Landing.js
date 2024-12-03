@@ -81,15 +81,15 @@ const Landing = () => {
                         whileInView={{ opacity: 1, y: 0 }} // Move to normal position
                         transition={{ duration: 1 }}
                     >
-                        <p className="text-black font-semibold dark:text-white">
+                        <p className="text-black font-semibold">
                             Hey 👋 I am
                         </p>
-                        <h2 className="text-9xl font-bold mt-2 text-black dark:text-gray-300">
+                        <h2 className="text-9xl font-bold mt-2 text-black">
                             Joene Tuban
                         </h2>
 
 
-                        <h2 className="text-3xl font-bold mt-5 text-black dark:text-gray-300">
+                        <h2 className="text-3xl font-bold mt-5 text-black">
                             <Typewriter
                                 words={['Frontend Developer', 'Web Designer', 'UI Designer']}
                                 loop={false} // Set to `true` for infinite loop

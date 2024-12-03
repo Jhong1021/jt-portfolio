@@ -38,7 +38,7 @@ const ContactForm = () => {
     if (!isOpen) return null; // Return null to remove the form when closed
 
     return (
-        <div className="mt-8 p-6 bg-opacity-50 backdrop-blur-md rounded-md relative">
+        <div className="mt-8 p-6 bg-opacity-50 backdrop-blur-md rounded-md relative max-w-screen-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
             <form onSubmit={handleSubmit}>
                 {/* Close Button inside the form */}
                 <button
@@ -49,7 +49,7 @@ const ContactForm = () => {
                     X
                 </button>
 
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Me</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">Contact Me</h3>
 
                 <div className="mb-4">
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700">Name</label>
@@ -102,7 +102,7 @@ const ContactForm = () => {
 
             <div className="mt-6">
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">Get in Touch</h4>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 justify-center">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
                         <FaFacebook size={24} />
                     </a>
