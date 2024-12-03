@@ -51,8 +51,8 @@ const ProductGrid = () => {
         {/* Header Section */}
         <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
           <div className="flex items-center gap-12">
-            <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">My Recent Projects</h2>
-            <p className="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+            <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">My Recent Projects</h2>
+            <p className="hidden max-w-screen-sm text-gray-800 md:block">
               Explore some of my recent projects showcasing a range of design and functionality.
             </p>
           </div>

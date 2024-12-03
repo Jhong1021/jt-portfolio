@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageSection = () => {
+const Services = () => {
     return (
         <section className="overflow-hidden min-h-screen flex items-center justify-center">
             <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-4 sm:px-6 md:px-8 py-6 sm:py-8 lg:py-12 space-y-12 flex flex-col justify-center">
@@ -82,4 +82,4 @@ const ImageSection = () => {
     );
 };
 
-export default ImageSection;
+export default Services;
