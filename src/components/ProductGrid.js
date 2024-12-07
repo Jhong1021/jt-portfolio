@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Furniture from "../assets/images/furnitureshop.png";
 import Gym from "../assets/images/gym.png";
 import Cat from "../assets/images/meowcart.png";
-import todoList from "../assets/images/todo list.png";
+import Vr from "../assets/images/vr.png"
 
 const ProductGrid = () => {
   const images = [
@@ -27,11 +27,11 @@ const ProductGrid = () => {
     },
     {
       id: 3,
-      src: todoList,
+      src: Vr,
       alt: "Photo by Martin Sanchez",
-      label: "Todo List App",
+      label: "Vr ImmersionX",
       colSpan: "md:col-span-2",
-      link: "https://todo-list-app-tau-eight.vercel.app/",
+      link: "https://vr-immersion-x.vercel.app/",
       animation: { opacity: 0, x: -50 }, // Fade Left
     },
     {
