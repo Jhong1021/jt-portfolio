@@ -1,7 +1,6 @@
 // src/App.js
 import React from 'react';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Services from './components/Services';
 import ProductGrid from './components/ProductGrid';
@@ -14,10 +13,9 @@ function App() {
     <div className="App">
       <Navbar />
       <BackgroundWrapper>
-        {/* <Home /> */}
         <Landing />
-        <ProductGrid />
         <AboutMe />
+        <ProductGrid />
         <Services />
         <Skills />
       </BackgroundWrapper>

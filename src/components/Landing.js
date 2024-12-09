@@ -81,7 +81,7 @@ const Landing = () => {
                         whileInView={{ opacity: 1, y: 0 }} // Move to normal position
                         transition={{ duration: 1 }}
                     >
-                        <p className="text-black font-semibold">
+                        <p className="text-black text-xl font-semibold">
                             Hey 👋 I am
                         </p>
                         <h2 className="text-9xl font-bold mt-2 text-black">
