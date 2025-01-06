@@ -7,6 +7,7 @@ import ProductGrid from './components/ProductGrid';
 import Landing from './components/Landing';
 import BackgroundWrapper from './components/BackgroundWrapper';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Services />
         <Skills />
       </BackgroundWrapper>
+      <Footer />
 
     </div>
   );

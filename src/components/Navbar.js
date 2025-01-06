@@ -1,52 +1,79 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isNavbarOpen, setNavbarOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+    const toggleNavbar = () => {
+        setNavbarOpen(!isNavbarOpen);
     };
 
     return (
-        <header className="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
-            <div className="px-4">
-                <div className="flex items-center justify-between">
-                    <div className="flex shrink-0">
-                        <a aria-current="page" className="flex items-center" href="/">
-                            <img className="h-7 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Website Logo" />
-                            <p className="sr-only">Website Title</p>
+        <header
+            className="fixed top-0 left-0 right-0 text-slate-700 container mx-auto flex flex-col overflow-hidden px-4 py-4 lg:flex-row lg:items-center bg-transparent z-50"
+            style={{ fontFamily: 'Ga Maamli, sans-serif' }}
+        >
+            <input type="checkbox" className="peer hidden" id="navbar-open" />
+            <label
+                className="absolute top-5 right-5 cursor-pointer lg:hidden"
+                htmlFor="navbar-open"
+                onClick={toggleNavbar}
+            >
+                <svg
+                    className="h-7 w-7"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                </svg>
+            </label>
+            <nav
+                aria-label="Header Navigation"
+                className={`peer-checked:pt-8 peer-checked:max-h-60 flex max-h-0 w-full flex-col items-center overflow-hidden transition-all lg:ml-24 lg:max-h-full lg:flex-row ${isNavbarOpen ? "pt-8 max-h-60" : ""
+                    }`}
+            >
+                <ul className="flex w-full flex-col text-center items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
+                    <li className="lg:mr-12">
+                        <a
+                            className="rounded text-black font-semibold transition focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-2"
+                            href="#home"
+                        >
+                            Home
                         </a>
-                    </div>
-
-                    {/* Hamburger menu icon for small screens */}
-                    <button onClick={toggleMenu} className="md:hidden block">
-                        <svg className="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                            <title>menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                        </svg>
-                    </button>
-
-                    {/* Links - Centered in all screen sizes */}
-                    <div className={`hidden md:flex md:items-center md:w-auto w-full ${isOpen ? 'block' : 'hidden'}`} id="menu">
-                        <nav>
-                            <ul className="md:flex items-center justify-center gap-5 text-base text-gray-700 pt-4 md:pt-0">
-                                <li><a className="md:p-4 py-3 px-0 block" href="#home">Home</a></li>
-                                <li><a className="md:p-4 py-3 px-0 block" href="#project">Project</a></li>
-                                <li><a className="md:p-4 py-3 px-0 block" href="#about">About Me</a></li>
-                                <li><a className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#skill">Skill</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
-            {/* Menu for small screens */}
-            <div className={`md:hidden flex-col items-center w-full pt-4 space-y-4 ${isOpen ? 'block' : 'hidden'}`} id="mobile-menu">
-                <a className="text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900 block py-3 px-0" href="#home">Home</a>
-                <a className="text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900 block py-3 px-0" href="#project">Project</a>
-                <a className="text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900 block py-3 px-0" href="#about">About Me</a>
-                <a className="text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900 block py-3 px-0" href="#skill">Skill</a>
-            </div>
+                    </li>
+                    <li className="lg:mr-12">
+                        <a
+                            className="rounded text-black font-semibold transition focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-2"
+                            href="#about"
+                        >
+                            About Me
+                        </a>
+                    </li>
+                    <li className="lg:mr-12">
+                        <a
+                            className="rounded text-black font-semibold transition focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-2"
+                            href="#project"
+                        >
+                            Project
+                        </a>
+                    </li>
+                    <li className="lg:mr-12">
+                        <a
+                            className="rounded text-black font-semibold transition focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-2"
+                            href="#skill"
+                        >
+                            Skills
+                        </a>
+                    </li>
+                </ul>
+                <hr className="mt-4 w-full lg:hidden" />
+            </nav>
         </header>
     );
 };
