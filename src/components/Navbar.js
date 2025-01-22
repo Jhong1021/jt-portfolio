@@ -3,15 +3,36 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const handleLinkClick = (index) => {
         setActiveLink(index);
-        setIsMenuOpen(false);
+        setIsMenuOpen(false); // Close the menu when a link is clicked
     };
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen((prev) => !prev); // Toggle the menu open/close state
     };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1024); // Set true if window width is less than 1024px
+        };
+
+        handleResize(); // Initial check on mount
+
+        window.addEventListener("resize", handleResize); // Add resize listener
+
+        return () => {
+            window.removeEventListener("resize", handleResize); // Cleanup on unmount
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isMobile) {
+            setIsMenuOpen(false); // Close the menu when resizing to larger screen
+        }
+    }, [isMobile]);
 
     useEffect(() => {
         const sections = document.querySelectorAll("section");
@@ -151,10 +172,9 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
-                {/* Right corner buttons */}
             </nav>
             <div className={`navbar-menu relative z-50 ${isMenuOpen ? "block" : "hidden"}`}>
-                <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={toggleMenu}></div>
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                     <div className="flex items-center mb-8">
                         <a className="mr-auto text-3xl font-bold leading-none" href="#">
@@ -166,6 +186,44 @@ const Navbar = () => {
                             </svg>
                         </a>
                     </div>
+                    <ul className="flex flex-col space-y-6">
+                        <li>
+                            <a
+                                className={`text-sm ${activeLink === 0 ? "text-black" : "text-gray-400"} hover:text-black`}
+                                href="#home"
+                                onClick={() => handleLinkClick(0)}
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={`text-sm ${activeLink === 1 ? "text-black" : "text-gray-400"} hover:text-black`}
+                                href="#about"
+                                onClick={() => handleLinkClick(1)}
+                            >
+                                About Me
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={`text-sm ${activeLink === 2 ? "text-black" : "text-gray-400"} hover:text-black`}
+                                href="#project"
+                                onClick={() => handleLinkClick(2)}
+                            >
+                                Project
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className={`text-sm ${activeLink === 3 ? "text-black" : "text-gray-400"} hover:text-black`}
+                                href="#skill"
+                                onClick={() => handleLinkClick(3)}
+                            >
+                                Skill
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
