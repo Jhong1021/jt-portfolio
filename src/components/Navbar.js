@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState(null);
@@ -13,15 +13,48 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    useEffect(() => {
+        const sections = document.querySelectorAll("section");
+        const observerOptions = {
+            root: null, // Use the viewport
+            rootMargin: "0px",
+            threshold: 0.6, // 60% of the section must be visible
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const sectionId = entry.target.id;
+                    const sectionIndex = [...sections].findIndex(
+                        (section) => section.id === sectionId
+                    );
+                    setActiveLink(sectionIndex);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => {
+            sections.forEach((section) => observer.unobserve(section));
+        };
+    }, []);
+
     return (
         <div className="bg-blue-500 fixed top-0 left-0 w-full z-50">
             <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
                 <a className="text-3xl font-bold leading-none" href="#">
                     <svg className="h-10" alt="logo" viewBox="0 0 10240 10240">
+                        {/* Add the path for the logo here */}
                     </svg>
                 </a>
                 <div className="lg:hidden">
-                    <button className="navbar-burger flex items-center text-blue-600 p-3">
+                    <button
+                        className="navbar-burger flex items-center text-blue-600 p-3"
+                        onClick={toggleMenu}
+                    >
                         <svg
                             className="block h-4 w-4 fill-current"
                             viewBox="0 0 20 20"
@@ -35,8 +68,7 @@ const Navbar = () => {
                 <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
                     <li>
                         <a
-                            className={`text-sm ${activeLink === 0 ? "text-black" : "text-gray-400"
-                                } hover:text-black`}
+                            className={`text-sm ${activeLink === 0 ? "text-black" : "text-gray-400"} hover:text-black`}
                             href="#home"
                             onClick={() => handleLinkClick(0)}
                         >
@@ -61,8 +93,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className={`text-sm ${activeLink === 1 ? "text-black" : "text-gray-400"
-                                } hover:text-black`}
+                            className={`text-sm ${activeLink === 1 ? "text-black" : "text-gray-400"} hover:text-black`}
                             href="#about"
                             onClick={() => handleLinkClick(1)}
                         >
@@ -87,8 +118,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className={`text-sm ${activeLink === 2 ? "text-black" : "text-gray-400"
-                                } hover:text-black`}
+                            className={`text-sm ${activeLink === 2 ? "text-black" : "text-gray-400"} hover:text-black`}
                             href="#project"
                             onClick={() => handleLinkClick(2)}
                         >
@@ -113,8 +143,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className={`text-sm ${activeLink === 3 ? "text-black" : "text-gray-400"
-                                } hover:text-black`}
+                            className={`text-sm ${activeLink === 3 ? "text-black" : "text-gray-400"} hover:text-black`}
                             href="#skill"
                             onClick={() => handleLinkClick(3)}
                         >
@@ -122,8 +151,9 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
+                {/* Right corner buttons */}
             </nav>
-            <div className="navbar-menu relative z-50 hidden">
+            <div className={`navbar-menu relative z-50 ${isMenuOpen ? "block" : "hidden"}`}>
                 <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
                 <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
                     <div className="flex items-center mb-8">

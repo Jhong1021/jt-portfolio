@@ -21,15 +21,15 @@ import { motion } from 'framer-motion';
 
 const AboutMe = () => {
     return (
-        <motion.div
-            className="p-10 min-h-screen flex items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 1 }}
-        >
-            <div id='about' className="w-full max-w-6xl h-full grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+        <section id="about" className="p-10 min-h-screen flex items-center justify-center">
+            <motion.div
+                className="w-full max-w-6xl h-full grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 1 }}
+            >
                 {/* Section with Image */}
                 <motion.div
                     className="text-white flex items-center justify-center h-96 rounded-lg overflow-hidden"
@@ -104,8 +104,8 @@ const AboutMe = () => {
                 >
                     <img src="images/ako.png" alt="About Me" className="w-full h-full object-cover rounded-lg" />
                 </motion.div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </section>
     );
 };
 
