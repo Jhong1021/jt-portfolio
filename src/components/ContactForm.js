@@ -12,7 +12,6 @@ const ContactForm = () => {
         const email = event.target.email.value;
         const message = event.target.message.value;
 
-        // Check if all fields are filled
         if (!name || !email || !message) {
             Swal.fire({
                 icon: 'error',
