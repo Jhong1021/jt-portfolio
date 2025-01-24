@@ -60,7 +60,7 @@ const ProductGrid = () => {
             href="https://github.com/Jhong1021?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-lg border bg-blue-600 hover:bg-transparent hover:text-blue-600 border-2 border-blue-600 transition-all text-white md:px-8 md:py-3 md:text-base"
+            className="inline-block rounded-lg border bg-blue-600 hover:bg-transparent hover:text-blue-600 border-blue-600 transition-all text-white md:px-8 md:py-3 md:text-base"
           >
             More
           </a>
