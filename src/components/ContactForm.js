@@ -51,7 +51,7 @@ const ContactForm = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">Contact Me</h3>
 
                 <div className="mb-4">
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700">Name</label>
+                    <label htmlFor="name" className="block text-sm font-semibold text-orange-400">Name</label>
                     <input
                         id="name"
                         name="name"

@@ -27,7 +27,7 @@ const HeroSection = () => {
                     <div className="w-fit rounded-[6rem] mx-auto overflow-hidden rounded-tl-none rounded-br-none bg-orange-400">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="absolute -left-10 -top-20 h-28 w-28 rounded-xl bg-white text-yellow-400"
+                            className="absolute -left-10 -top-20 h-28 w-28 rounded-xl bg-black text-white"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -39,7 +39,7 @@ const HeroSection = () => {
                         </svg>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="absolute right-0 -bottom-20 h-28 w-28 rounded-xl bg-white text-yellow-400"
+                            className="absolute right-0 -bottom-20 h-28 w-28 rounded-xl bg-black text-white"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -55,28 +55,28 @@ const HeroSection = () => {
 
                 {/* Text Section */}
                 <div className="lg:max-w-xl lg:pr-5 text-center lg:text-left order-2 lg:order-1">
-                    <p className="text-xl text-gray-700 mb-4">Hi Fellas, I'm</p>
-                    <h2 className="mb-6 max-w-lg text-4xl font-light leading-snug tracking-tight text-blue-600 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+                    <p className="text-xl text-white mb-4">Hi Fellas, I'm</p>
+                    <h2 className="mb-6 max-w-lg text-4xl font-light leading-snug tracking-tight text-orange-400 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                         Joene Tuban <br />
-                        <span className="my-1 inline-block border-b-8 border-blue-600 font-bold text-blue-600">
+                        <span className="my-1 inline-block border-b-8 border-white font-bold text-white">
                             Frontend Developer
                         </span>
                     </h2>
-                    <p className="text-base text-gray-700">
+                    <p className="text-base text-white">
                         I craft the bridge between user and technology, turning ideas into seamless, engaging experiences.
                     </p>
 
                     <div className="mt-10 flex flex-col items-center md:flex-row">
                         <a
                             href="/"
-                            onClick={handleDownload} className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-blue-700 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-blue-800"
+                            onClick={handleDownload} className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-orange-400 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-orange-500"
                         >
                             Download CV
                         </a>
                         <a
                             href="#about"
                             aria-label=""
-                            className="underline-offset-2 inline-flex items-center font-semibold text-blue-600 underline transition-colors duration-200 hover:underline"
+                            className="underline-offset-2 inline-flex items-center font-semibold text-orange-400 underline transition-colors duration-200 hover:underline"
                         >
                             About Me
                         </a>
@@ -90,16 +90,16 @@ const HeroSection = () => {
                                 alt="TikTok Icon"
                                 className="w-12 h-12 mr-2"  // Equal size and controlled spacing
                             />
-                            <p className="text-gray-700">Follow me on TikTok</p>
+                            <p className="text-white">Follow me on TikTok</p>
                         </div>
                         <div className="flex max-w-xs px-4 justify-center items-center sm:justify-start">
                             {/* Instagram Icon */}
                             <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lv-iEOWtRxGDqsOR-Pa1kIiqN298569zVA&s"
+                                src="https://i.pinimg.com/474x/12/28/06/122806966a15c0e1d5232ce5c55b1fd5.jpg"
                                 alt="Instagram Icon"
                                 className="w-12 h-12 mr-2"  // Equal size and controlled spacing
                             />
-                            <p className="text-gray-700">Follow me on Instagram</p>
+                            <p className="text-white">Follow me on Instagram</p>
                         </div>
                     </div>
 

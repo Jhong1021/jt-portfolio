@@ -49,8 +49,11 @@ const AboutMe = () => {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-3xl font-bold mb-4">About Me</h2>
-                    <p className="text-start text-lg mt-10">
+                    <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+                        <span className="text-white">ABOUT</span> <span className="text-orange-400">ME</span>
+                    </h2>
+
+                    <p className="text-start text-lg text-white mt-10">
                         "Hi, I'm Joene Tuban, a front-end developer passionate about creating beautiful, user-friendly websites. I specialize in React, JavaScript, HTML5, CSS3, and TailwindCSS to bring web projects to life."
                     </p>
                 </motion.div>
@@ -62,21 +65,24 @@ const AboutMe = () => {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h3 className="text-2xl font-semibold mb-4">Personal Details</h3>
-                    <div className="text-left mb-4">
-                        <p><FaUniversity className="inline mr-2 text-blue-500 text-xl" /><strong>College:</strong> New Era University</p>
-                        <p><FaChurch className="inline mr-2 text-green-500 text-xl" /><strong>Religion:</strong> Iglesia Ni Cristo</p>
-                        <p><FaBirthdayCake className="inline mr-2 text-yellow-500 text-xl" /><strong>Age:</strong> 25</p>
-                        <p><FaPhoneAlt className="inline mr-2 text-purple-500 text-xl" /><strong>Cellphone No:</strong> 0961 272 4880</p>
-                        <p><FaEnvelope className="inline mr-2 text-red-500 text-xl" /><strong>Email:</strong> joenetuban@gmail.com</p>
-                        <p><FaMapMarkerAlt className="inline mr-2 text-teal-500 text-xl" /><strong>Location:</strong> Barangay Culiat, Quezon City, Metro Manila.</p>
+                    <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+                        <span className="text-white">PERSONAL</span> <span className="text-orange-400">INFOS</span>
+                    </h2>
+                    <div className="text-left mb-4 text-white">
+                        <p><FaUniversity className="inline mr-2 text-orange-400 text-xl" /><strong>College:</strong> New Era University</p>
+                        <p><FaChurch className="inline mr-2 text-orange-400 text-xl" /><strong>Religion:</strong> Iglesia Ni Cristo</p>
+                        <p><FaBirthdayCake className="inline mr-2 text-orange-400 text-xl" /><strong>Age:</strong> 25</p>
+                        <p><FaPhoneAlt className="inline mr-2 text-orange-400 text-xl" /><strong>Cellphone No:</strong> 0961 272 4880</p>
+                        <p><FaEnvelope className="inline mr-2 text-orange-400 text-xl" /><strong>Email:</strong> joenetuban@gmail.com</p>
+                        <p><FaMapMarkerAlt className="inline mr-2 text-orange-400 text-xl" /><strong>Location:</strong> Barangay Culiat, Quezon City, Metro Manila.</p>
                     </div>
 
+
                     <div className="flex space-x-4 mt-4 items-center justify-center">
-                        {[{ icon: FaFacebook, link: 'https://facebook.com', color: 'text-blue-600' },
-                        { icon: FaInstagram, link: 'https://instagram.com', color: 'text-pink-600' },
-                        { icon: FaLinkedin, link: 'https://linkedin.com', color: 'text-blue-700' },
-                        { icon: FaGithub, link: 'https://github.com', color: 'text-gray-800' }].map(({ icon: Icon, link, color }, index) => (
+                        {[{ icon: FaFacebook, link: 'https://facebook.com', color: 'text-orange-400' },
+                        { icon: FaInstagram, link: 'https://instagram.com', color: 'text-orange-400' },
+                        { icon: FaLinkedin, link: 'https://linkedin.com', color: 'text-orange-400' },
+                        { icon: FaGithub, link: 'https://github.com', color: 'text-orange-400' }].map(({ icon: Icon, link, color }, index) => (
                             <motion.a
                                 key={index}
                                 href={link}
@@ -86,12 +92,13 @@ const AboutMe = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: false, amount: 0.2 }}
                                 transition={{ delay: 0.3 + (index * 0.1) }}
-                                className={`text-3xl hover:${color}`}
+                                className={`text-3xl ${color} hover:text-orange-500`}
                             >
                                 <Icon />
                             </motion.a>
                         ))}
                     </div>
+
                 </motion.div>
 
                 {/* Section with Second Image */}

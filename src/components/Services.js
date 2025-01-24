@@ -20,9 +20,10 @@ const Services = () => {
                     whileInView={{ opacity: 1, y: 0 }} // Move to normal position
                     transition={{ duration: 1 }}
                 >
-                    <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">
-                        Here’s what I offer
+                    <h2 className="text-4xl tracking-tight font-extrabold mb-4 text-center">
+                        <span className="text-white">HERE'S WHAT</span> <span className="text-orange-400">I OFFER</span>
                     </h2>
+
                 </motion.div>
 
                 <div className="flex flex-col sm:flex-row mx-auto gap-8">
@@ -41,10 +42,10 @@ const Services = () => {
                                 alt="Responsive Design"
                             />
                         </a>
-                        <h3 className="mt-4 text-sm font-bold text-gray-800">
+                        <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Responsive Design
                         </h3>
-                        <p className="mt-2 text-xs text-gray-600">
+                        <p className="mt-2 text-xs text-white">
                             Creating websites that look great and function flawlessly on all
                             devices, from mobile phones to desktops.
                         </p>
@@ -65,10 +66,10 @@ const Services = () => {
                                 alt="Performance Optimization"
                             />
                         </a>
-                        <h3 className="mt-4 text-sm font-bold text-gray-800">
+                        <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Performance Optimization
                         </h3>
-                        <p className="mt-2 text-xs text-gray-600">
+                        <p className="mt-2 text-xs text-white">
                             Crafting fast-loading, optimized web pages for a smooth user
                             experience.
                         </p>
@@ -89,10 +90,10 @@ const Services = () => {
                                 alt="Simple and Clean Design"
                             />
                         </a>
-                        <h3 className="mt-4 text-sm font-bold text-gray-800">
+                        <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Simple and Clean Design
                         </h3>
-                        <p className="mt-2 text-xs text-gray-600">
+                        <p className="mt-2 text-xs text-white">
                             Developing intuitive and clutter-free user interfaces for a
                             seamless user experience.
                         </p>
@@ -113,10 +114,10 @@ const Services = () => {
                                 alt="Animation and Interactivity"
                             />
                         </a>
-                        <h3 className="mt-4 text-sm font-bold text-gray-800">
+                        <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Animation and Interactivity
                         </h3>
-                        <p className="mt-2 text-xs text-gray-600">
+                        <p className="mt-2 text-xs text-white">
                             Adding thoughtful animations and interactive elements to enhance
                             user engagement without overwhelming them.
                         </p>

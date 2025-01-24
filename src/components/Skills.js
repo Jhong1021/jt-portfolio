@@ -14,9 +14,11 @@ const Skills = () => {
                         viewport={{ once: false, amount: 0.2 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-                            Skills
+                        <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+                            <span className="text-white">SKILLS</span>
                         </h2>
+
+
                     </motion.div>
 
                 </div>
@@ -31,8 +33,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <FaHtml5 style={{ color: "#E34F26" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">HTML 5</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">HTML 5</h3>
+                        <p className="text-white">
                             The standard language used to create and structure content on the web. HTML defines the elements and layout of web pages.
                         </p>
                     </motion.div>
@@ -47,8 +49,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <FaCss3Alt style={{ color: "#1572B6" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">CSS</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">CSS</h3>
+                        <p className="text-white">
                             A style sheet language used to control the appearance of HTML elements, including layout, colors, fonts, and responsiveness.
                         </p>
                     </motion.div>
@@ -63,8 +65,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <FaJs style={{ color: "#F7DF1E" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">JavaScript</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">JavaScript</h3>
+                        <p className="text-white">
                             A programming language used to add interactivity and dynamic behavior to web pages, allowing for real-time updates, animations, and user input handling.
                         </p>
                     </motion.div>
@@ -79,8 +81,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <FaBootstrap style={{ color: "#563D7C" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">Bootstrap</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">Bootstrap</h3>
+                        <p className="text-white">
                             A front-end framework that offers ready-to-use components and grid systems to build responsive, mobile-first websites and applications quickly.
                         </p>
                     </motion.div>
@@ -95,8 +97,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <FaReact style={{ color: "#61DAFB" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">React</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">React</h3>
+                        <p className="text-white">
                             A JavaScript library for building user interfaces, especially single-page applications, by allowing the creation of reusable UI components.
                         </p>
                     </motion.div>
@@ -111,8 +113,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <SiTailwindcss className="w-5 h-5 lg:w-6 lg:h-6 text-[#38BDF8]" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">Tailwind CSS</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">Tailwind CSS</h3>
+                        <p className="text-white">
                             A utility-first CSS framework that provides a set of predefined classes to quickly style elements without writing custom CSS.
                         </p>
                     </motion.div>
@@ -127,8 +129,8 @@ const Skills = () => {
                         <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                             <FaGithub style={{ color: "#333" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
-                        <h3 className="mb-2 text-xl font-bold text-gray-900">GitHub</h3>
-                        <p className="text-gray-900">
+                        <h3 className="mb-2 text-xl font-bold text-orange-400">GitHub</h3>
+                        <p className="text-white">
                             A platform for hosting and version-controlling software projects, using Git. It enables collaboration among developers and tracks changes to code over time.
                         </p>
                     </motion.div>

@@ -83,10 +83,10 @@ const Navbar = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 mb-2 px-4 shadow backdrop-blur-lg bg-white/50">
+        <header className="fixed top-0 left-0 right-0 z-50 mb-2 px-4 shadow backdrop-blur-lg bg-transparent">
             <div className="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
                 <a className="flex items-center text-3xl font-semibold tracking-tight text-black" href="/">
-                    <span className="font-serif">Joene</span>
+                    <span className="font-serif text-orange-400">Joene</span>
                 </a>
 
                 {/* Hamburger icon positioned top-right */}
@@ -116,15 +116,16 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#home"
-                                className={`text-gray-600 hover:text-blue-600 ${activeLink === "#home" ? "text-blue-600 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 ${activeLink === "#home" ? "text-orange-400 font-bold" : ""}`}
                             >
                                 Home
                             </a>
+
                         </li>
                         <li>
                             <a
                                 href="#about"
-                                className={`text-gray-600 hover:text-blue-600 ${activeLink === "#about" ? "text-blue-600 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 ${activeLink === "#about" ? "text-orange-400 font-bold" : ""}`}
                             >
                                 About Me
                             </a>
@@ -132,7 +133,7 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#project"
-                                className={`text-gray-600 hover:text-blue-600 ${activeLink === "#project" ? "text-blue-600 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 ${activeLink === "#project" ? "text-orange-400 font-bold" : ""}`}
                             >
                                 Project
                             </a>
@@ -140,7 +141,7 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#skill"
-                                className={`text-gray-600 hover:text-blue-600 ${activeLink === "#skill" ? "text-blue-600 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 ${activeLink === "#skill" ? "text-orange-400 font-bold" : ""}`}
                             >
                                 Skill
                             </a>
@@ -148,7 +149,7 @@ const Navbar = () => {
                         <li className="mt-2 sm:mt-0">
                             <a
                                 onClick={handleContactClick}
-                                className="rounded-xl border-2 border-blue-600 px-6 py-2 font-medium text-blue-600 hover:bg-blue-600 hover:text-white"
+                                className="rounded-xl border-2 border-orange-400 px-6 py-2 font-medium text-white hover:bg-orange-500 hover:text-white"
                                 href="#"
                             >
                                 Contact
@@ -160,35 +161,36 @@ const Navbar = () => {
             {/* Conditionally render Modal Contact Form */}
             {showForm && (
                 <div className="absolute top-full left-0 w-full bg-opacity-50 z-50">
-                    <div className="bg-white bg-opacity-90 backdrop-blur-lg p-8 rounded-lg max-w-lg mx-auto mt-4">
+                    <div className="bg-black bg-opacity-90 backdrop-blur-lg p-8 rounded-lg max-w-lg mx-auto mt-4">
                         <form onSubmit={handleSubmit}>
                             <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-semibold text-gray-700">Name</label>
+                                <label htmlFor="name" className="block text-sm font-semibold text-orange-400">Name</label>
                                 <input
                                     type="text"
                                     id="name"
-                                    className="w-full p-2 mt-1 border-b-2 border-black focus:border-blue-500 bg-transparent text-gray-700 placeholder-gray-500"
+                                    className="w-full p-2 mt-1 border-b-2 border-white focus:border-blue-500 bg-transparent text-gray-700 placeholder-white"
                                     placeholder="Your Name"
                                     value={formData.name}
                                     onChange={handleChange}
                                 />
                             </div>
+
                             <div className="mb-4">
-                                <label htmlFor="email" className="block text-sm font-semibold text-gray-700">Email</label>
+                                <label htmlFor="email" className="block text-sm font-semibold text-orange-400">Email</label>
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full p-2 mt-1 border-b-2 border-black focus:border-blue-500 bg-transparent text-gray-700 placeholder-gray-500"
+                                    className="w-full p-2 mt-1 border-b-2 border-white focus:border-blue-500 bg-transparent text-gray-700 placeholder-white"
                                     placeholder="Your Email"
                                     value={formData.email}
                                     onChange={handleChange}
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="message" className="block text-sm font-semibold text-gray-700">Message</label>
+                                <label htmlFor="message" className="block text-sm font-semibold text-orange-400">Message</label>
                                 <textarea
                                     id="message"
-                                    className="w-full p-2 mt-1 border-b-2 border-black focus:border-blue-500 bg-transparent text-gray-700 placeholder-gray-500"
+                                    className="w-full p-2 mt-1 border-b-2 border-white focus:border-blue-500 bg-transparent text-gray-700 placeholder-white"
                                     rows="4"
                                     placeholder="Your Message"
                                     value={formData.message}
@@ -199,13 +201,14 @@ const Navbar = () => {
                                 <button
                                     type="button"
                                     onClick={handleCloseModal}
-                                    className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-md mr-2"
+                                    className="bg-transparent border-2 border-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded-md mr-2"
                                 >
                                     Close
                                 </button>
+
                                 <button
                                     type="submit"
-                                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
+                                    className="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded-md"
                                 >
                                     Send Message
                                 </button>
@@ -213,19 +216,19 @@ const Navbar = () => {
                         </form>
                         <div className="mt-4">
                             <div className="mb-4 flex items-center">
-                                <FaPhoneAlt className="text-blue-600 mr-2" />
-                                <span className="text-gray-700">0961 272 4880</span>
+                                <FaPhoneAlt className="text-orange-400 mr-2" />
+                                <span className="text-white">0961 272 4880</span>
                             </div>
                             <div className="mb-4 flex items-center">
-                                <FaMapMarkerAlt className="text-green-600 mr-2" />
-                                <span className="text-gray-700">Barangay Culiat, Quezon City, Metro Manila, Philippines</span>
+                                <FaMapMarkerAlt className="text-orange-400 mr-2" />
+                                <span className="text-white">Barangay Culiat, Quezon City, Metro Manila, Philippines</span>
                             </div>
                             <div className="mt-6">
-                                <h4 className="text-lg font-semibold text-gray-800 mb-2">Get in Touch</h4>
+                                <h4 className="text-lg font-semibold text-orange-400 mb-2">Get in Touch</h4>
                                 <div className="flex space-x-4">
-                                    <a href="https://www.facebook.com/joene.tuban?mibextid=LQQJ4d" className="text-blue-500"><FaFacebook size={24} /></a>
-                                    <a href="https://www.instagram.com/joenetuban/" className="text-pink-500"><FaInstagram size={24} /></a>
-                                    <a href="https://www.linkedin.com/in/joenetuban/" className="text-blue-700"><FaLinkedin size={24} /></a>
+                                    <a href="https://www.facebook.com/joene.tuban?mibextid=LQQJ4d" className="text-orange-400"><FaFacebook size={24} /></a>
+                                    <a href="https://www.instagram.com/joenetuban/" className="text-orange-400"><FaInstagram size={24} /></a>
+                                    <a href="https://www.linkedin.com/in/joenetuban/" className="text-orange-400"><FaLinkedin size={24} /></a>
                                 </div>
                             </div>
                         </div>
