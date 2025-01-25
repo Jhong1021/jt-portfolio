@@ -86,7 +86,7 @@ const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 z-50 mb-2 px-4 shadow backdrop-blur-lg bg-transparent">
             <div className="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
                 <a className="flex items-center text-3xl font-semibold tracking-tight text-black" href="/">
-                    <span className="font-serif text-orange-400">Joene</span>
+                    <span className="font-serif text-orange-400">JT</span>
                 </a>
 
                 {/* Hamburger icon positioned top-right */}
