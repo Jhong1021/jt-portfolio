@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import Furniture from "../assets/images/furnitureshop.png";
 import Gym from "../assets/images/gym.png";
 import Cat from "../assets/images/meowcart.png";
-import Vr from "../assets/images/vr.png"
+import Vr from "../assets/images/vr.png";
+import Project5 from "../assets/images/project5.png"; // Add your new image
+import Project6 from "../assets/images/project6.png"; // Add your new image
 
 const ProductGrid = () => {
   const images = [
@@ -42,6 +44,24 @@ const ProductGrid = () => {
       colSpan: "md:col-span-1",
       link: "https://meow-cart.vercel.app/",
       animation: { opacity: 0, y: 50 }, // Fade Up
+    },
+    {
+      id: 5,
+      src: Project5,
+      alt: "Photo by XYZ",
+      label: "Galaxy Kicks",
+      colSpan: "md:col-span-1",
+      link: "https://galaxy-kicks.vercel.app/",
+      animation: { opacity: 0, y: -50 }, // Fade Down
+    },
+    {
+      id: 6,
+      src: Project6,
+      alt: "Photo by ABC",
+      label: "Leadership Summit",
+      colSpan: "md:col-span-2",
+      link: "https://leadership-kappa.vercel.app/",
+      animation: { opacity: 0, x: 50 }, // Fade Right
     },
   ];
 
@@ -84,19 +104,6 @@ const ProductGrid = () => {
             </motion.a>
           ))}
         </div>
-
-        {/* More Button Section */}
-        <div className="mt-8 flex justify-center">
-          <a
-            href="https://github.com/Jhong1021?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded bg-orange-400 hover:bg-orange-500 transition-all text-white px-6 py-3 text-lg md:px-8 md:py-3 md:text-base"
-          >
-            More
-          </a>
-        </div>
-
       </div>
     </div>
   );
