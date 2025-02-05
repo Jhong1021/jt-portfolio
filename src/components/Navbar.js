@@ -15,16 +15,19 @@ const Navbar = () => {
     // Intersection Observer to detect which section is currently in the viewport
     useEffect(() => {
         const sections = document.querySelectorAll("section");
+
+        if (!sections.length) return; // Ensure sections exist before observing
+
         const options = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.5, // Trigger when 50% of the section is visible
+            threshold: 0.3, // Reduced from 0.5 to 0.3 for better detection
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    setActiveLink(`#${entry.target.id}`); // Set active link based on the section
+                    setActiveLink(`#${entry.target.id}`);
                 }
             });
         }, options);
@@ -35,6 +38,8 @@ const Navbar = () => {
             sections.forEach((section) => observer.unobserve(section));
         };
     }, []);
+
+
 
     const handleContactClick = () => {
         setShowForm(!showForm); // Toggle form visibility
@@ -116,32 +121,43 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#home"
-                                className={`text-white hover:text-orange-400 ${activeLink === "#home" ? "text-orange-400 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#home"
+                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    : ""
+                                    }`}
                             >
                                 Home
                             </a>
-
                         </li>
                         <li>
                             <a
                                 href="#about"
-                                className={`text-white hover:text-orange-400 ${activeLink === "#about" ? "text-orange-400 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#about"
+                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    : ""
+                                    }`}
                             >
                                 About Me
                             </a>
                         </li>
                         <li>
                             <a
-                                href="#project"
-                                className={`text-white hover:text-orange-400 ${activeLink === "#project" ? "text-orange-400 font-bold" : ""}`}
+                                href="#projects"
+                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#projects"
+                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    : ""
+                                    }`}
                             >
-                                Project
+                                Projects
                             </a>
                         </li>
                         <li>
                             <a
                                 href="#skill"
-                                className={`text-white hover:text-orange-400 ${activeLink === "#skill" ? "text-orange-400 font-bold" : ""}`}
+                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#skill"
+                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    : ""
+                                    }`}
                             >
                                 Skill
                             </a>
