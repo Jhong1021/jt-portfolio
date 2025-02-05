@@ -122,7 +122,7 @@ const Navbar = () => {
                             <a
                                 href="#home"
                                 className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#home"
-                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
                             >
@@ -133,7 +133,7 @@ const Navbar = () => {
                             <a
                                 href="#about"
                                 className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#about"
-                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
                             >
@@ -144,7 +144,7 @@ const Navbar = () => {
                             <a
                                 href="#projects"
                                 className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#projects"
-                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
                             >
@@ -155,7 +155,7 @@ const Navbar = () => {
                             <a
                                 href="#skill"
                                 className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#skill"
-                                    ? "text-orange-400 font-bold underline underline-offset-4"
+                                    ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
                             >
@@ -165,7 +165,7 @@ const Navbar = () => {
                         <li className="mt-2 sm:mt-0">
                             <a
                                 onClick={handleContactClick}
-                                className="rounded-xl border-2 border-orange-400 px-6 py-2 font-medium text-white hover:bg-orange-500 hover:text-white"
+                                className="rounded-xl border-2 border-orange-400 px-6 py-2 font-normal text-white hover:bg-orange-500 hover:text-white"
                                 href="#"
                             >
                                 Contact
