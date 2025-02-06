@@ -33,7 +33,7 @@ const ProductGrid = () => {
       alt: "Photo by Martin Sanchez",
       label: "Vr ImmersionX",
       colSpan: "md:col-span-2",
-      link: "https://vr-immersion-x.vercel.app/",
+      link: "https://vr-immersionx.vercel.app/",
       animation: { opacity: 0, x: -50 }, // Fade Left
     },
     {
