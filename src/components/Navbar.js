@@ -89,7 +89,7 @@ const Navbar = () => {
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 mb-2 px-4 shadow backdrop-blur-lg bg-transparent">
-            <div className="relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
                 <a className="flex items-center text-3xl font-semibold tracking-tight text-black" href="/">
                     <span className="font-serif text-orange-400">JT</span>
                 </a>
@@ -118,7 +118,7 @@ const Navbar = () => {
                     className={`${isMenuOpen ? "block" : "hidden"} sm:block pl-2 py-6 sm:py-0`}
                 >
                     <ul className="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
-                        <li>
+                        <li className="sm:ml-auto">
                             <a
                                 href="#home"
                                 className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#home"
@@ -131,8 +131,8 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="#about"
-                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#about"
+                                href="#aboutme"
+                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#aboutme"
                                     ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}

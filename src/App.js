@@ -8,7 +8,6 @@ import ProductGrid from './components/ProductGrid';
 import Skills from './components/Skills';
 import HeroSection from './components/HeroSection';
 import DarkWallpaper from './components/DarkWallpaper';
-import GreyWallpaper from './components/GreyWallpaper';
 
 function App() {
   return (
@@ -19,17 +18,17 @@ function App() {
         <HeroSection />
       </DarkWallpaper>
 
-      <GreyWallpaper>
+      <DarkWallpaper>
         <AboutMe />
-      </GreyWallpaper>
+      </DarkWallpaper>
 
       <DarkWallpaper>
         <ProductGrid />
       </DarkWallpaper>
 
-      <GreyWallpaper>
+      <DarkWallpaper>
         <Services />
-      </GreyWallpaper>
+      </DarkWallpaper>
 
       <DarkWallpaper>
         <Skills />

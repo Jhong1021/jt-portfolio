@@ -21,7 +21,7 @@ import { motion } from 'framer-motion';
 
 const AboutMe = () => {
     return (
-        <section id="about" className="p-10 min-h-screen flex items-center justify-center">
+        <section id="aboutme" className="p-10 min-h-screen flex items-center justify-center">
             <motion.div
                 className="w-full max-w-6xl h-full grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
                 initial={{ opacity: 0 }}
