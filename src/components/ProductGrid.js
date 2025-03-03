@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Furniture from "../assets/images/furnitureshop.png";
+import Skin from "../assets/images/toriskincare.png"
 import Gym from "../assets/images/gym.png";
 import Cat from "../assets/images/meowcart.png";
 import Vr from "../assets/images/vr.png";
@@ -11,11 +11,11 @@ const ProductGrid = () => {
   const images = [
     {
       id: 1,
-      src: Furniture,
+      src: Skin,
       alt: "Photo by Minh Pham",
-      label: "Timber & Trend",
+      label: "Tori Skin",
       colSpan: "md:col-span-1",
-      link: "https://furniture-shop-liart.vercel.app/",
+      link: "https://tori-skin-care.vercel.app/",
       animation: { opacity: 0, y: -50 }, // Fade Down
     },
     {
