@@ -54,7 +54,7 @@ const AboutMe = () => {
                     </h2>
 
                     <p className="text-start text-lg text-white mt-10">
-                        Hi, I'm Joene Tuban, a front-end developer passionate about creating beautiful, user-friendly websites. I specialize in React, JavaScript, HTML5, CSS3, and TailwindCSS to bring web projects to life.
+                        Hi, I'm Joene Tuban, a front-end developer passionate about creating beautiful, user-friendly websites. I specialize in React, JavaScript, HTML5, CSS3, Bootstrap and TailwindCSS to bring web projects to life.
                     </p>
                 </motion.div>
 
