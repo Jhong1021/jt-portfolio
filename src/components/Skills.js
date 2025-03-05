@@ -14,7 +14,7 @@ const Skills = () => {
                         viewport={{ once: false, amount: 0.2 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+                        <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
                             <span className="text-white">SKILLS</span>
                         </h2>
 
@@ -25,7 +25,7 @@ const Skills = () => {
                 <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                     {/* Skill Card 1 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}
@@ -39,9 +39,11 @@ const Skills = () => {
                         </p>
                     </motion.div>
 
+
+
                     {/* Skill Card 2 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}
@@ -57,7 +59,7 @@ const Skills = () => {
 
                     {/* Skill Card 3 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}
@@ -73,7 +75,7 @@ const Skills = () => {
 
                     {/* Skill Card 4 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}
@@ -89,7 +91,7 @@ const Skills = () => {
 
                     {/* Skill Card 5 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}
@@ -105,7 +107,7 @@ const Skills = () => {
 
                     {/* Skill Card 6 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}
@@ -121,7 +123,7 @@ const Skills = () => {
 
                     {/* Skill Card 7 */}
                     <motion.div
-                        className="transform transition-all duration-500 ease-out"
+                        className="transform transition-all duration-500 ease-out border border-orange-400 rounded-lg p-4"
                         whileInView={{ scale: 1.05, opacity: 1 }}
                         initial={{ scale: 0.95, opacity: 0.5 }}
                         viewport={{ amount: 0.3 }}

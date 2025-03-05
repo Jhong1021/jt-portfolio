@@ -20,7 +20,7 @@ const Services = () => {
                     whileInView={{ opacity: 1, y: 0 }} // Move to normal position
                     transition={{ duration: 1 }}
                 >
-                    <h2 className="text-4xl tracking-tight font-extrabold mb-4 text-center">
+                    <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4 text-center">
                         <span className="text-white">HERE'S WHAT</span> <span className="text-orange-400">I OFFER</span>
                     </h2>
 

@@ -49,7 +49,7 @@ const AboutMe = () => {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+                    <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
                         <span className="text-white">ABOUT</span> <span className="text-orange-400">ME</span>
                     </h2>
 
@@ -65,7 +65,7 @@ const AboutMe = () => {
                     viewport={{ once: false, amount: 0.2 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+                    <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
                         <span className="text-white">PERSONAL</span> <span className="text-orange-400">INFOS</span>
                     </h2>
                     <div className="text-left mb-4 text-white">

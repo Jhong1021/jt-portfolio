@@ -72,7 +72,7 @@ const ProductGrid = () => {
           {/* Header Section */}
           <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
             <div className="flex flex-col items-center gap-12 sm:flex-row sm:items-start">
-              <h2 className="text-4xl tracking-tight font-extrabold mb-4">
+              <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
                 <span className="text-white">MY RECENT</span> <span className="text-orange-400">PROJECTS</span>
               </h2>
             </div>

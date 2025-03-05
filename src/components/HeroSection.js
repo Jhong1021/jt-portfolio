@@ -101,10 +101,10 @@ const HeroSection = () => {
                         className="lg:max-w-xl lg:pr-5 text-center lg:text-left order-2 lg:order-1"
                         variants={itemVariants}
                     >
-                        <p className="text-md text-white font-extrabold mb-4">HI FELLAS, I'M</p>
-                        <h2 className="mb-6 max-w-lg text-7xl font-extrabold leading-snug tracking-tight text-orange-400">
+                        <p style={{ fontFamily: "'Zen Dots', cursive" }} className="text-md text-white font-extrabold mb-4">HI FELLAS, I'M</p>
+                        <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="mb-6 max-w-lg text-5xl font-extrabold leading-snug tracking-tight text-orange-400">
                             JOENE TUBAN <br />
-                            <span className="inline-block font-extrabold text-3xl text-white">
+                            <span className="inline-block font-extrabold text-xl text-white">
                                 PASSIONATE : <span className="text-orange-400"><Typewriter
                                     words={["FRONTEND DEVELOPER"]}
                                     loop={false}
@@ -116,7 +116,7 @@ const HeroSection = () => {
                                 /></span>
                             </span>
                         </h2>
-                        <p className="text-base text-white">
+                        <p style={{ fontFamily: "'Zen Dots', cursive" }} className="text-base text-white">
                             I craft the bridge between user and technology, turning ideas into seamless, engaging experiences.
                         </p>
 
@@ -126,13 +126,15 @@ const HeroSection = () => {
                                 onClick={(event) => handleDownload(event)}
                                 className="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-orange-400 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-orange-500"
                                 variants={itemVariants}
+                                style={{ fontFamily: "'Zen Dots', cursive" }}
                             >
                                 Download CV
                             </motion.a>
                             <a
-                                href="#about"
+                                href="#aboutme"
                                 aria-label=""
                                 className="underline-offset-2 inline-flex items-center font-semibold text-orange-400 underline transition-colors duration-200 hover:underline"
+                                style={{ fontFamily: "'Zen Dots', cursive" }}
                             >
                                 About Me
                             </a>
