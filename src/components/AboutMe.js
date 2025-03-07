@@ -21,7 +21,7 @@ import { motion } from 'framer-motion';
 
 const AboutMe = () => {
     return (
-        <section id="aboutme" className="p-10 min-h-screen flex items-center justify-center">
+        <section id="aboutme" className="bg-gray-900 p-10 min-h-screen flex items-center justify-center">
             <motion.div
                 className="w-full max-w-6xl h-full grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
                 initial={{ opacity: 0 }}
@@ -50,10 +50,10 @@ const AboutMe = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
-                        <span className="text-white">ABOUT</span> <span className="text-orange-400">ME</span>
+                        <span className="text-gray-400">ABOUT</span> <span className="text-orange-400">ME</span>
                     </h2>
 
-                    <p className="text-start text-lg text-white mt-10">
+                    <p className="text-start text-lg text-gray-400 mt-10">
                         Hi, I'm Joene Tuban, a front-end developer passionate about creating beautiful, user-friendly websites. I specialize in React, JavaScript, HTML5, CSS3, Bootstrap and TailwindCSS to bring web projects to life.
                     </p>
                 </motion.div>
@@ -66,9 +66,9 @@ const AboutMe = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
-                        <span className="text-white">PERSONAL</span> <span className="text-orange-400">INFOS</span>
+                        <span className="text-gray-400">PERSONAL</span> <span className="text-orange-400">INFOS</span>
                     </h2>
-                    <div className="text-left mb-4 text-white">
+                    <div className="text-left mb-4 text-gray-400">
                         <p><FaUniversity className="inline mr-2 text-orange-400 text-xl" /><strong>College:</strong> New Era University</p>
                         <p><FaChurch className="inline mr-2 text-orange-400 text-xl" /><strong>Religion:</strong> Iglesia Ni Cristo</p>
                         <p><FaBirthdayCake className="inline mr-2 text-orange-400 text-xl" /><strong>Age:</strong> 25</p>

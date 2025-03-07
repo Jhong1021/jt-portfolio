@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
     return (
-        <section id='skill'>
+        <section id='skill' className='bg-gray-900'>
             <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <div className="max-w-screen-md mb-8 lg:mb-16">
                     <motion.div
@@ -15,7 +15,7 @@ const Skills = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
-                            <span className="text-white">SKILLS</span>
+                            <span className="text-gray-400">SKILLS</span>
                         </h2>
 
 
@@ -34,7 +34,7 @@ const Skills = () => {
                             <FaHtml5 style={{ color: "#E34F26" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">HTML 5</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             The standard language used to create and structure content on the web. HTML defines the elements and layout of web pages.
                         </p>
                     </motion.div>
@@ -52,7 +52,7 @@ const Skills = () => {
                             <FaCss3Alt style={{ color: "#1572B6" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">CSS</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             A style sheet language used to control the appearance of HTML elements, including layout, colors, fonts, and responsiveness.
                         </p>
                     </motion.div>
@@ -68,7 +68,7 @@ const Skills = () => {
                             <FaJs style={{ color: "#F7DF1E" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">JavaScript</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             A programming language used to add interactivity and dynamic behavior to web pages, allowing for real-time updates, animations, and user input handling.
                         </p>
                     </motion.div>
@@ -84,7 +84,7 @@ const Skills = () => {
                             <FaBootstrap style={{ color: "#563D7C" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">Bootstrap</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             A front-end framework that offers ready-to-use components and grid systems to build responsive, mobile-first websites and applications quickly.
                         </p>
                     </motion.div>
@@ -100,7 +100,7 @@ const Skills = () => {
                             <FaReact style={{ color: "#61DAFB" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">React</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             A JavaScript library for building user interfaces, especially single-page applications, by allowing the creation of reusable UI components.
                         </p>
                     </motion.div>
@@ -116,7 +116,7 @@ const Skills = () => {
                             <SiTailwindcss className="w-5 h-5 lg:w-6 lg:h-6 text-[#38BDF8]" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">Tailwind CSS</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             A utility-first CSS framework that provides a set of predefined classes to quickly style elements without writing custom CSS.
                         </p>
                     </motion.div>
@@ -132,7 +132,7 @@ const Skills = () => {
                             <FaGithub style={{ color: "#333" }} className="w-5 h-5 lg:w-6 lg:h-6" />
                         </div>
                         <h3 className="mb-2 text-xl font-bold text-orange-400">GitHub</h3>
-                        <p className="text-white">
+                        <p className="text-gray-400">
                             A platform for hosting and version-controlling software projects, using Git. It enables collaboration among developers and tracks changes to code over time.
                         </p>
                     </motion.div>

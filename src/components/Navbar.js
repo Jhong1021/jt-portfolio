@@ -121,7 +121,7 @@ const Navbar = () => {
                         <li className="sm:ml-auto">
                             <a
                                 href="#home"
-                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#home"
+                                className={`text-gray-400 hover:text-orange-400 transition-all duration-300 ${activeLink === "#home"
                                     ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
@@ -132,7 +132,7 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#aboutme"
-                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#aboutme"
+                                className={`text-gray-400 hover:text-orange-400 transition-all duration-300 ${activeLink === "#aboutme"
                                     ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
@@ -143,7 +143,7 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#projects"
-                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#projects"
+                                className={`text-gray-400 hover:text-orange-400 transition-all duration-300 ${activeLink === "#projects"
                                     ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
@@ -154,7 +154,7 @@ const Navbar = () => {
                         <li>
                             <a
                                 href="#skill"
-                                className={`text-white hover:text-orange-400 transition-all duration-300 ${activeLink === "#skill"
+                                className={`text-gray-400 hover:text-orange-400 transition-all duration-300 ${activeLink === "#skill"
                                     ? "text-orange-400 font-normal underline decoration-orange-400 underline-offset-4"
                                     : ""
                                     }`}
@@ -165,7 +165,7 @@ const Navbar = () => {
                         <li className="mt-2 sm:mt-0">
                             <a
                                 onClick={handleContactClick}
-                                className="rounded-xl border-2 border-orange-400 px-6 py-2 font-normal text-white hover:bg-orange-500 hover:text-white"
+                                className="rounded-xl border-2 border-orange-400 px-6 py-2 font-normal text-gray-400 hover:bg-orange-500 hover:text-white"
                                 href="#"
                             >
                                 Contact

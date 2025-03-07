@@ -51,7 +51,7 @@ const HeroSection = () => {
     };
 
     return (
-        <section id='home'>
+        <section id='home' className="bg-gray-900">
             <motion.div
                 className="container mx-auto h-full px-4 py-10 sm:max-w-xl md:max-w-full md:px-24 md:py-36 lg:max-w-screen-xl lg:px-8"
                 whileInView={{ opacity: 1, y: 0 }}
@@ -77,10 +77,10 @@ const HeroSection = () => {
                         className="lg:max-w-xl lg:pr-5 text-center lg:text-left order-2 lg:order-1"
                         variants={itemVariants}
                     >
-                        <p style={{ fontFamily: "'Zen Dots', cursive" }} className="text-md text-white font-extrabold mb-4">HI FELLAS, I'M</p>
+                        <p style={{ fontFamily: "'Zen Dots', cursive" }} className="text-md text-gray-400 font-extrabold mb-4">HI FELLAS, I'M</p>
                         <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="mb-6 max-w-lg text-5xl font-extrabold leading-snug tracking-tight text-orange-400">
                             JOENE TUBAN <br />
-                            <span className="inline-block font-extrabold text-xl text-white">
+                            <span className="inline-block font-extrabold text-xl text-gray-400">
                                 PASSIONATE : <span className="text-orange-400"><Typewriter
                                     words={["FRONTEND DEVELOPER"]}
                                     loop={false}
@@ -92,7 +92,7 @@ const HeroSection = () => {
                                 /></span>
                             </span>
                         </h2>
-                        <p style={{ fontFamily: "'Zen Dots', cursive" }} className="text-base text-white">
+                        <p style={{ fontFamily: "'Zen Dots', cursive" }} className="text-base text-gray-400">
                             I craft the bridge between user and technology, turning ideas into seamless, engaging experiences.
                         </p>
 
@@ -114,27 +114,6 @@ const HeroSection = () => {
                             >
                                 About Me
                             </a>
-                        </div>
-
-                        <div className="mt-12 flex flex-col space-y-3 divide-gray-300 text-sm text-gray-700 sm:flex-row sm:space-y-0 sm:divide-x sm:justify-start sm:text-left text-center">
-                            <div className="flex max-w-xs px-4 justify-center items-center sm:justify-start">
-                                {/* TikTok Icon */}
-                                <img
-                                    src="https://static.vecteezy.com/system/resources/previews/018/930/574/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png"
-                                    alt="TikTok Icon"
-                                    className="w-12 h-12 mr-2"
-                                />
-                                <p className="text-white">Follow me on TikTok</p>
-                            </div>
-                            <div className="flex max-w-xs px-4 justify-center items-center sm:justify-start">
-                                {/* Instagram Icon */}
-                                <img
-                                    src="https://i.pinimg.com/474x/12/28/06/122806966a15c0e1d5232ce5c55b1fd5.jpg"
-                                    alt="Instagram Icon"
-                                    className="w-12 h-12 mr-2"
-                                />
-                                <p className="text-white">Follow me on Instagram</p>
-                            </div>
                         </div>
                     </motion.div>
                 </div>

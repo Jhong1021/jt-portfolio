@@ -66,14 +66,14 @@ const ProductGrid = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen py-6 sm:py-8 lg:py-12">
+    <section id="projects" className="bg-gray-900 min-h-screen py-6 sm:py-8 lg:py-12">
       <div className="container mx-auto px-4 md:px-8">
         <div className="mx-auto max-w-screen-2xl">
           {/* Header Section */}
           <div className="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
             <div className="flex flex-col items-center gap-12 sm:flex-row sm:items-start">
               <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4">
-                <span className="text-white">MY RECENT</span> <span className="text-orange-400">PROJECTS</span>
+                <span className="text-gray-400">MY RECENT</span> <span className="text-orange-400">PROJECTS</span>
               </h2>
             </div>
           </div>

@@ -13,26 +13,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <HeroSection />
+      <AboutMe />
+      <ProductGrid />
+      <Services />
+      <Skills />
 
-      <DarkWallpaper>
-        <HeroSection />
-      </DarkWallpaper>
-
-      <DarkWallpaper>
-        <AboutMe />
-      </DarkWallpaper>
-
-      <DarkWallpaper>
-        <ProductGrid />
-      </DarkWallpaper>
-
-      <DarkWallpaper>
-        <Services />
-      </DarkWallpaper>
-
-      <DarkWallpaper>
-        <Skills />
-      </DarkWallpaper>
 
       <Footer />
     </div>

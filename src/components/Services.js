@@ -12,7 +12,7 @@ const fadeUpVariants = {
 
 const Services = () => {
     return (
-        <section className="overflow-hidden min-h-screen flex items-center justify-center">
+        <section className="bg-gray-900 overflow-hidden min-h-screen flex items-center justify-center">
             <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-4 sm:px-6 md:px-8 py-6 sm:py-8 lg:py-12 space-y-12 flex flex-col justify-center">
                 <motion.div
                     className="opacity-0"
@@ -21,7 +21,7 @@ const Services = () => {
                     transition={{ duration: 1 }}
                 >
                     <h2 style={{ fontFamily: "'Zen Dots', cursive" }} className="text-3xl tracking-tight font-extrabold mb-4 text-center">
-                        <span className="text-white">HERE'S WHAT</span> <span className="text-orange-400">I OFFER</span>
+                        <span className="text-gray-400">HERE'S WHAT</span> <span className="text-orange-400">I OFFER</span>
                     </h2>
 
                 </motion.div>
@@ -45,7 +45,7 @@ const Services = () => {
                         <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Responsive Design
                         </h3>
-                        <p className="mt-2 text-xs text-white">
+                        <p className="mt-2 text-xs text-gray-400">
                             Creating websites that look great and function flawlessly on all
                             devices, from mobile phones to desktops.
                         </p>
@@ -69,7 +69,7 @@ const Services = () => {
                         <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Performance Optimization
                         </h3>
-                        <p className="mt-2 text-xs text-white">
+                        <p className="mt-2 text-xs text-gray-400">
                             Crafting fast-loading, optimized web pages for a smooth user
                             experience.
                         </p>
@@ -93,7 +93,7 @@ const Services = () => {
                         <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Simple and Clean Design
                         </h3>
-                        <p className="mt-2 text-xs text-white">
+                        <p className="mt-2 text-xs text-gray-400">
                             Developing intuitive and clutter-free user interfaces for a
                             seamless user experience.
                         </p>
@@ -117,7 +117,7 @@ const Services = () => {
                         <h3 className="mt-4 text-sm font-bold text-orange-400">
                             Animation and Interactivity
                         </h3>
-                        <p className="mt-2 text-xs text-white">
+                        <p className="mt-2 text-xs text-gray-400">
                             Adding thoughtful animations and interactive elements to enhance
                             user engagement without overwhelming them.
                         </p>
