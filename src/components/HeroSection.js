@@ -51,7 +51,7 @@ const HeroSection = () => {
     };
 
     return (
-        <section id='home' className="bg-gray-900">
+        <section id='home' className="bg-gray-900 pt-7">
             <motion.div
                 className="container mx-auto h-full px-4 py-10 sm:max-w-xl md:max-w-full md:px-24 md:py-36 lg:max-w-screen-xl lg:px-8"
                 whileInView={{ opacity: 1, y: 0 }}

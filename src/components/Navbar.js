@@ -137,7 +137,7 @@ const Navbar = () => {
                                     : ""
                                     }`}
                             >
-                                About Me
+                                About
                             </a>
                         </li>
                         <li>
@@ -249,6 +249,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             )}
         </header>
